@@ -1,0 +1,979 @@
+			<table cellspacing="0" cellpadding="0" style="border-collapse:collapse">
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&lt;!DOCTYPE html&gt;</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&lt;html lang="en"&gt;</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&lt;head&gt;</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&lt;meta charset="UTF-8"&gt;</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&lt;title&gt;</span><span style="font-family:'Apple Color Emoji'; font-size:9pt; color:#1f2328">✨</span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328"> Magic To-Do&lt;/title&gt;</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&lt;style&gt;</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">body { font-family: system-ui, -apple-system, sans-serif; max-width: 400px; margin: 50px auto; padding: 20px; background-color: #f4f4f9; }</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">h1 { text-align: center; color: #333; }</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">/* Input Area */</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">#inputArea { display: flex; gap: 10px; margin-bottom: 20px; }</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">#taskInput { flex-grow: 1; padding: 12px; font-size: 16px; border: 1px solid #ddd; border-radius: 4px; }</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">#addBtn { padding: 12px 20px; font-size: 16px; cursor: pointer; background-color: #007bff; color: white; border: none; border-radius: 4px; }</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">#addBtn:hover { background-color: #0056b3; }</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">#addBtn:disabled { opacity: 0.6; cursor: wait; background-color: #ccc; }</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;</span>
+						</p>
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">/* Task List */</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">ul { list-style-type: none; padding: 0; }</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">li { padding: 15px; background: #fff; margin-bottom: 10px; border-radius: 6px; cursor: pointer; display: flex; justify-content: space-between; box-shadow: 0 2px 4px rgba(0,0,0,0.05); transition: 0.2s; }</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">li:hover { transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.1); }</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">.delete-hint { color: #ff4d4d; font-size: 0.8em; opacity: 0; transition: opacity 0.2s; }</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">li:hover .delete-hint { opacity: 1; }</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&lt;/style&gt;</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&lt;/head&gt;</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&lt;body&gt;</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;</span>
+						</p>
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&lt;h1&gt;</span><span style="font-family:'Apple Color Emoji'; font-size:9pt; color:#1f2328">✨</span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328"> Magic To-Do&lt;/h1&gt;</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0; </span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&lt;div id="inputArea"&gt;</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&lt;input type="text" id="taskInput" placeholder="Enter a task..." maxlength="60" autocomplete="off"&gt;</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&lt;button id="addBtn"&gt;Add&lt;/button&gt;</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&lt;/div&gt;</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;</span>
+						</p>
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&lt;ul id="taskList"&gt;</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&lt;li style="cursor: default; background: none; box-shadow: none; color: #888; text-align: center;"&gt;Loading data...&lt;/li&gt;</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&lt;/ul&gt;</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;</span>
+						</p>
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&lt;script type="module"&gt;</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">// 1. Import Firebase v11 (No build tools needed!)</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">import { initializeApp } from "https://www.gstatic.com/firebasejs/11.8.1/firebase-app.js";</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">import { getFirestore, collection, addDoc, deleteDoc, doc, onSnapshot, serverTimestamp, query, orderBy } </span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">from "https://www.gstatic.com/firebasejs/11.8.1/firebase-firestore.js";</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;</span>
+						</p>
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">// 2. CONFIGURATION (Replace with your keys!)</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">// TODO: Paste your specific keys from Firebase Console here</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Google Sans Code'; font-size:10.5pt">const firebaseConfig = {</span>
+						</p>
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0; </span><span style="font-family:'Google Sans Code'; font-size:10.5pt">apiKey: "AIzaSyBCMiUx2oVDCI3uGkLUzi8_O0Id4qheGYM",</span>
+						</p>
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0; </span><span style="font-family:'Google Sans Code'; font-size:10.5pt">authDomain: "class-todo-app-a5697.firebaseapp.com",</span>
+						</p>
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0; </span><span style="font-family:'Google Sans Code'; font-size:10.5pt">projectId: "class-todo-app-a5697",</span>
+						</p>
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0; </span><span style="font-family:'Google Sans Code'; font-size:10.5pt">storageBucket: "class-todo-app-a5697.appspot.com",</span>
+						</p>
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0; </span><span style="font-family:'Google Sans Code'; font-size:10.5pt">messagingSenderId: "652250810634",</span>
+						</p>
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0; </span><span style="font-family:'Google Sans Code'; font-size:10.5pt">appId: "1:652250810634:web:1e10c2c157f6b6b056e52f3"</span>
+						</p>
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Google Sans Code'; font-size:10.5pt">};</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">// 3. Initialize App &amp; Database</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">const app = initializeApp(firebaseConfig);</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">const db = getFirestore(app);</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">const tasksCol = collection(db, "tasks");</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;</span>
+						</p>
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">// 4. UI Elements</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">const taskInput = document.getElementById("taskInput");</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">const addBtn = document.getElementById("addBtn");</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">const taskList = document.getElementById("taskList");</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;</span>
+						</p>
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">// 5. FUNCTION: Add Task</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">async function addTask() {</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">// Data Hygiene: Trim whitespace and enforce limit</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">const text = taskInput.value.trim().slice(0, 60);</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">if (!text) return;</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;</span>
+						</p>
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">try {</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">addBtn.disabled = true; </span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">addBtn.textContent = "Saving...";</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">await addDoc(tasksCol, { </span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">text: text,</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">created: serverTimestamp() </span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">});</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">taskInput.value = "";</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">taskInput.focus();</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">} catch (e) {</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">console.error(e);</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">alert("Error adding task: " + e.message);</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">} finally {</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">addBtn.disabled = false;</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">addBtn.textContent = "Add";</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">}</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">}</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;</span>
+						</p>
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">// 6. EVENT LISTENERS</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">addBtn.onclick = addTask;</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">taskInput.addEventListener("keydown", (e) =&gt; { // Keydown is safer than keypress</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">if (e.key === "Enter") addTask();</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">});</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;</span>
+						</p>
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">// 7. REAL-TIME SYNC (The Magic)</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">const q = query(tasksCol, orderBy("created", "desc"));</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;</span>
+						</p>
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">onSnapshot(q, (snapshot) =&gt; {</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">taskList.innerHTML = ""; </span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">if (snapshot.empty) {</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">taskList.innerHTML = "&lt;li style='background:none; box-shadow:none; color:#888; justify-content:center; cursor:default'&gt;No tasks yet!&lt;/li&gt;";</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">return;</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">}</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;</span>
+						</p>
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">snapshot.forEach((taskDoc) =&gt; {</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">const li = document.createElement("li");</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">// SECURITY: Use textContent to prevent XSS attacks</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">const span = document.createElement("span");</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">span.textContent = taskDoc.data().text; </span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">li.appendChild(span);</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;</span>
+						</p>
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">const hint = document.createElement("span");</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">hint.className = "delete-hint";</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">hint.textContent = "Tap to delete";</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">li.appendChild(hint);</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;</span>
+						</p>
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">// Confirm before delete</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">li.onclick = () =&gt; {</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">if(confirm("Delete this task?")) {</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">deleteDoc(doc(db, "tasks", taskDoc.id));</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">}</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">};</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">taskList.appendChild(li);</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">});</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">}, (error) =&gt; {</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">console.error("Real-time error:", error);</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">taskList.innerHTML = "&lt;li style='color:red'&gt;Error. Check console (F12). If 'Index Required', click the link in console.&lt;/li&gt;";</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">});</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&lt;/script&gt;</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&lt;/body&gt;</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-right:7.5pt; padding-left:7.5pt; vertical-align:top">
+						<p style="margin-top:0pt; margin-bottom:0pt; line-height:15pt">
+							<span style="font-family:'Segoe UI'; font-size:9pt; color:#1f2328">&lt;/html&gt;</span>
+						</p>
+					</td>
+				</tr>
+			</table>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+	<p style="bottom: 10px; right: 10px; position: absolute;"><a href="https://wordtohtml.net/?utm_source=wth_free_doc_conversion_link&utm_medium=external" target="_blank" style="font-size:11px; color: #d0d0d0">Converted to HTML with WordToHTML.net</a><span style="font-size:11px; color: #d0d0d0"> | </span><a href="https://documentconverter.pro/?utm_source=wth_free_doc_conversion_link&utm_medium=external" target="_blank" style="font-size:11px; color: #d0d0d0">Document Converter for Windows</a></p>
